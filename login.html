@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="cont">
+        <form class="form">
+            <div class="cont_Title">
+                <h1 class="title">
+                   Login
+                </h1>
+            </div>
+            <div class="cont_email">
+                <label for="email" class="Elementslebel" id="labelEmail">
+                    Email
+                </label>
+                <input type="email" id="email" required />
+                <div id="email-msg"></div>
+            </div>
+            <div class="cont_password">
+                <label for="password" class="Elementslebel" id="labelPass">
+                    Password
+                </label>
+                <input type="password" id="password" required />
+                <div id="password-msg"></div>
+            </div>
+            <div class="btn-container">
+                <button type="submit" id="btn-sub" onclick="validateAll()">
+                    Sign In
+                </button>
+                <button type="reset" id="btn-reset" >
+                    Reset
+                </button>
+            </div>
+            <div class="newaccount">
+                <a href="./register.html" id="anchor"> You have an account?</a>
+            </div>
+        </form>
+    </div>
+    <div id="test-container">
+        <h2>Validations:</h2>
+        <ul id="validations">
+        </ul>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="./js/login-validation.js"></script>     
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-image: linear-gradient(to right, #B06AB3, #4568DC);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 30em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background: #fff;
+}
+h1{
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 700;
+}
+label{
+    margin-top: 30px;
+    font-size: 25px;
+}
+input{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid violet;
+    background: none;
+    font-size: 18px;
+    color: #c6c6c6;
+}
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+#name-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#email-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#password-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#passwordConf-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+.btn-container{
+    display: flex;
+}
+button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, #B06AB3, #4568DC);
+    border: none;
+    width: 70%;
+    margin: 10px;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;  
+}
+.newaccount{
+    background: none;
+    color: #368862;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+a{
+    text-align: center; 
+    text-decoration: none;
+}
+#test-container{
+    width: 30em;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#validations{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+
+
+    
+}
+h2{
+    padding-top: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration-line: underline;
+    text-align: justify;
+    padding-bottom: 10px;
+}
