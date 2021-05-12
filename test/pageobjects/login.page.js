@@ -1,31 +1,36 @@
-const Page = require('./page');
+class LoginPage {
+    
+    get email  () { return $('#email') }
+    get emailMsg  () { return $('#email-msg') }
+    get password () { return $('#password') }
+    get passwordMsg () { return $('#password-msg') }
+    get btnSign () { return $('#btn-sub') }
+    get btnReset () { return $('#btn-reset') }
+    get msgValidations () { return $('#validations') }
+    get labelEmail () { return $('labelEmail') }
+    get labelPass  () { return $('labelPass') }
+ 
 
-/**
- * sub page containing specific selectors and methods for a specific page
- */
-class LoginPage extends Page {
-    /**
-     * define selectors using getter methods
-     */
-    get inputUsername () { return $('#username') }
-    get inputPassword () { return $('#password') }
-    get btnSubmit () { return $('button[type="submit"]') }
-
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
-     */
-    async login (username, password) {
-        await (await this.inputUsername).setValue(username);
-        await (await this.inputPassword).setValue(password);
-        await (await this.btnSubmit).click();
+  
+    setEmail (email) {
+        this.emailInput.setValue(email);
+        this.emailInput.keys("Tab");
     }
 
-    /**
-     * overwrite specifc options to adapt it to page object
-     */
+    setPassword (password) {
+        this.passwordInput.setValue(password);
+        this.passwordInput.keys("Tab");
+    }
+
+  
+    login (email, password) {
+        this.setEmail(email);
+        this.setPassword(password);
+        this.btnSign.click();
+    }
+
     open () {
-        return super.open('login');
+        return browser.url('https://github.com/MicaRolle/week-14/register.html');
     }
 }
 

@@ -41,12 +41,5 @@ describe('Testin in login page', () => {
             browser.pause(1500);
         });
     }); 
-    describe('register anchor redirection testing', () => {
-        it('register anchor should redirect', () => {
-            LoginPage.registerLink.click();
-            expect(browser).toHaveUrl('https://agustincarthery.github.io/javascript-DOM/register.html');
-            expect(browser).toHaveTitle('Register | Radium Rocket');
-            browser.pause(2000);
-        });
-    });
+  
 });
