@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js --spec"
+    "test": "npx wdio run ./wdio.conf.js --spec login_test.js"
   },
   "author": "",
   "license": "ISC",

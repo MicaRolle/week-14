@@ -30,7 +30,7 @@ class LoginPage {
     }
 
     open () {
-        return browser.url('https://github.com/MicaRolle/week-14/register.html');
+         browser.url('https://micarolle.github.io/login.html');
     }
 }
 

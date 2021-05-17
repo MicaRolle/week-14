@@ -2,7 +2,7 @@ const LoginPage = require('../pageobjects/login.page');
 
 describe('Testin in login page', () => {
     beforeAll('Open page in browser', () =>  {
-        LoginPage.open();
+      browser.url('https://micarolle.github.io/login.html');
     });
     describe('Testing Email cell', () => {
         it('Use a invalid email',()=>{
