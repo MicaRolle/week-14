@@ -49,7 +49,7 @@ class RegisterPage {
     }
 
     open () {
-        browser.url('https://micarolle.github.io/register.html');
+        browser.url('https://micarolle.github.io/week-14/docs/register.html ');
     }
 }
 
