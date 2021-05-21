@@ -20,8 +20,8 @@ class RegisterPage {
 
   
     setName (name) {
-        this.nameImput.setValue(name);
-        this.nameImput.keys("Tab");
+        this.nameInput.setValue(name);
+        this.nameInput.keys("Tab");
     }
 
     setEmail (email) {
@@ -35,13 +35,13 @@ class RegisterPage {
     }
 
     setConfirmPass (confirmPassword) {
-        this.confirmPassInput.setValue(confirmPasswords);
+        this.confirmPassInput.setValue(confirmPassword);
         this.confirmPassInput.keys("Tab");
     }
 
   
     register (name, email, password, confirmPassword) {
-        this.setFullName(name);
+        this.setName(name);
         this.setEmail(email);
         this.setPassword(password);
         this.setConfirmPass(confirmPassword);

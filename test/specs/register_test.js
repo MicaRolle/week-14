@@ -54,12 +54,7 @@ describe('Testing in Register page', () => {
     });
 
     describe("Testing btns", () => {
-        it("Testing Reset: The bottom must reset all information", () => {
-            RegisterPage.btnSign.keys("Tab");
-            RegisterPage.btnReset.keys("Enter");
-            expect(RegisterPage.nameScreen).toHaveText("");
-            browser.pause(1500);  
-        });
+        
         it("Testing register: show user information", () => {
             RegisterPage.register('name', 'email', 'password', 'confirmPass');
             RegisterPage.btnSign.keys("Tab");
@@ -72,18 +67,18 @@ describe('Testing in Register page', () => {
 
     describe('Imputs exists', () => {
         it('Testing imputs', () => {
-            expect(RegisterPage.name).toExist();
-            expect(RegisterPage.email).toExist();
-            expect(RegisterPage.password).toExist();
-            expect(RegisterPage.confirmPassword).toExist();
+            expect(RegisterPage.nameInput).toExist();
+            expect(RegisterPage.emailInput).toExist();
+            expect(RegisterPage.passwordInput).toExist();
+            expect(RegisterPage.confirmPassInput).toExist();
             browser.pause(1500);
         });
         it('Testing correction labels', () => {
             RegisterPage.open();
-            expect(RegisterPage.labelName).toHaveText('Full Name');
+            expect(RegisterPage.labelName).toHaveText('Name');
             expect(RegisterPage.labelEmail).toHaveText('Email');
             expect(RegisterPage.labelPass).toHaveText('Password');
-            expect(RegisterPage.labelSecPas).toHaveText('Confirm Password')
+            expect(RegisterPage.labelSecPas).toHaveText('Repeat password')
             browser.pause(1500);
         });
     });  

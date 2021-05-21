@@ -24,7 +24,7 @@ email.addEventListener("blur", function (){
     } else {
         emailMsg.style.display = "flex";
         emailMsg.style.color = "red";
-        emailMsg.innerHTML = "The email is incorrect";
+        emailMsg.innerHTML = "Email format not valid";
     }
 });
 email.addEventListener("focus", function () {

@@ -23,7 +23,7 @@ nameInput.addEventListener("blur", function (){
     } else {
         nameMsg.style.display = "flex";
         nameMsg.style.color = "red";
-        nameMsg.innerHTML = "Only letters please";
+        nameMsg.innerHTML = "Full name must contain valid first name and last name";
     }
 });
 nameInput.addEventListener("focus", function () {
@@ -47,7 +47,7 @@ email.addEventListener("blur", function (){
     } else {
         emailMsg.style.display = "flex";
         emailMsg.style.color = "red";
-        emailMsg.innerHTML = "Only format to email";
+        emailMsg.innerHTML = "Email format not valid";
     }
 });
 email.addEventListener("focus", function () {
@@ -71,7 +71,7 @@ password.addEventListener("blur", function (){
     } else {
         passwordMsg.style.display = "flex";
         passwordMsg.style.color = "red";
-        passwordMsg.innerHTML = "Please, 8 letter, 1 Upletter and numbers";
+        passwordMsg.innerHTML = "Password must have 8 characters, one number, one uppercase";
     }
 });
 password.addEventListener("focus", function () {
@@ -93,7 +93,7 @@ confirmPassword.addEventListener("blur", function (){
     } else {
         confirmMsg.style.display = "flex";
         confirmMsg.style.color = "red";
-        confirmMsg.innerHTML = "The password are not coinsidense";
+        confirmMsg.innerHTML = "Password does not match";
     }
 });
 
