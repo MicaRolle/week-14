@@ -72,10 +72,10 @@ describe('Testing in Register page', () => {
 
     describe('Imputs exists', () => {
         it('Testing imputs', () => {
-            expect(RegisterPage.inputName).toExist();
-            expect(RegisterPage.emailInput).toExist();
-            expect(RegisterPage.passwordInput).toExist();
-            expect(RegisterPage.confirmPassInput).toExist();
+            expect(RegisterPage.name).toExist();
+            expect(RegisterPage.email).toExist();
+            expect(RegisterPage.password).toExist();
+            expect(RegisterPage.confirmPassword).toExist();
             browser.pause(1500);
         });
         it('Testing correction labels', () => {

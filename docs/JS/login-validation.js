@@ -50,7 +50,7 @@ password.addEventListener("blur", function (){
       } else {
           passwordMsg.style.display = "flex";
           passwordMsg.style.color = "red";
-          passwordMsg.innerHTML = "Please, 8 letter, 1 Upletter and numbers";
+          passwordMsg.innerHTML = "Password must have 8 characters, one number, one uppercase";
     }
 });
 

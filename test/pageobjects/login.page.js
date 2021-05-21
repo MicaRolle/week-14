@@ -1,8 +1,8 @@
 class LoginPage {
     
-    get email  () { return $('#email') }
+    get emailInput  () { return $('#email') }
     get emailMsg  () { return $('#email-msg') }
-    get password () { return $('#password') }
+    get passwordInput () { return $('#password') }
     get passwordMsg () { return $('#password-msg') }
     get btnSign () { return $('#btn-sub') }
     get btnReset () { return $('#btn-reset') }
@@ -30,7 +30,7 @@ class LoginPage {
     }
 
     open () {
-         browser.url('https://micarolle.github.io/login.html');
+      browser.url('https://micarolle.github.io/login.html');
     }
 }
 

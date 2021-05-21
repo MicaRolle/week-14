@@ -2,11 +2,11 @@ class RegisterPage {
     
     get nameInput () { return $('#name') } 
     get nameMsg () { return $('#name-msg') }
-    get email  () { return $('#email') }
+    get emailInput  () { return $('#email') }
     get emailMsg  () { return $('#email-msg') }
-    get password () { return $('#password') }
+    get passwordInput () { return $('#password') }
     get passwordMsg () { return $('#password-msg') }
-    get confirmPassword () { return $('#password_two') }
+    get confirmPassInput () { return $('#password_two') }
     get confirmMsg () { return $('#passwordConf-msg')}
     get btnSign () { return $('#btn-sub') }
     get btnReset () { return $('#btn-reset') }
@@ -19,9 +19,9 @@ class RegisterPage {
 
 
   
-    setName (nameInput) {
-        this.inputName.setValue(nameInput);
-        this.inputName.keys("Tab");
+    setName (name) {
+        this.nameImput.setValue(name);
+        this.nameImput.keys("Tab");
     }
 
     setEmail (email) {
@@ -40,11 +40,11 @@ class RegisterPage {
     }
 
   
-    register (nameInput, email, password, confirmPassword) {
-        this.setFullName(fullName);
+    register (name, email, password, confirmPassword) {
+        this.setFullName(name);
         this.setEmail(email);
         this.setPassword(password);
-        this.setConfirmPass(confirmPass);
+        this.setConfirmPass(confirmPassword);
         this.registerBtn.click();
     }
 
