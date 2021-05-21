@@ -11,10 +11,10 @@ class RegisterPage {
     get btnSign () { return $('#btn-sub') }
     get btnReset () { return $('#btn-reset') }
     get msgValidations () { return $('#validations') }
-    get labelName () { return $('labelName') }
-    get labelEmail () { return $('labelEmail') }
-    get labelPass  () { return $('labelPass') }
-    get labelSecPas () { return $('labelSecPas') }
+    get labelName () { return $('#labelName') }
+    get labelEmail () { return $('#labelEmail') }
+    get labelPass  () { return $('#labelPass') }
+    get labelSecPas () { return $('#labelSecPas') }
     get linkLogin () { return $('#anchor') }
 
 
@@ -45,7 +45,7 @@ class RegisterPage {
         this.setEmail(email);
         this.setPassword(password);
         this.setConfirmPass(confirmPassword);
-        this.registerBtn.click();
+    
     }
 
     open () {

@@ -7,8 +7,8 @@ class LoginPage {
     get btnSign () { return $('#btn-sub') }
     get btnReset () { return $('#btn-reset') }
     get msgValidations () { return $('#validations') }
-    get labelEmail () { return $('labelEmail') }
-    get labelPass  () { return $('labelPass') }
+    get labelEmail () { return $('#labelEmail') }
+    get labelPass  () { return $('#labelPass') }
  
 
   

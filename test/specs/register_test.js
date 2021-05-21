@@ -11,14 +11,14 @@ describe('Testing in Register page', () => {
             browser.pause(1500); 
         });       
         it('Use a valid name',()=>{
-            RegisterPage.setFullName('Valid name user');
+            RegisterPage.setName('Valid name user');
             expect(RegisterPage.nameMsg).toHaveText('Correct');
             browser.pause(1500);   
         });
     });
     describe('Testing Email cell', () => {
         it('Use a invalid email',()=>{
-            RegisterPage.setEmail('mica@hola');
+            RegisterPage.setEmail('mica');
             expect(RegisterPage.emailMsg).toHaveText('Email format not valid');
             browser.pause(1500);    
         }); 
@@ -53,18 +53,7 @@ describe('Testing in Register page', () => {
         });
     });
 
-    describe("Testing btns", () => {
-        
-        it("Testing register: show user information", () => {
-            RegisterPage.register('name', 'email', 'password', 'confirmPass');
-            RegisterPage.btnSign.keys("Tab");
-            RegisterPage.btnSign.keys("Enter");
-            expect(RegisterPage.msgValidations).toHaveTextContaining(['name', 'email',
-            'password', 'confirmPass']);
-            browser.pause(1500);  
-        });
-    });
-
+   
     describe('Imputs exists', () => {
         it('Testing imputs', () => {
             expect(RegisterPage.nameInput).toExist();

@@ -6,7 +6,7 @@ describe('Testin in login page', () => {
     });
     describe('Testing Email cell', () => {
         it('Use a invalid email',()=>{
-            LoginPage.setEmail('mica@hola');
+            LoginPage.setEmail('mica');
             expect(LoginPage.emailMsg).toHaveText('Email format not valid');
             browser.pause(1500);    
         }); 
